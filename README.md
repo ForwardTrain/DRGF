@@ -32,39 +32,31 @@ This project adopts a separated front-end and back-end architecture consisting o
         └── common/          # Common utilities and configuration
 
 ## Technology Stack
-
 ### Front-end (DRGF-Web)
- -----------------------------------------------------------------------
-  Category               Technology
-  ---------------------- ------------------------------------------------
-  Framework              Vue 3.2 + Vue Router 4 + Vuex 4
-  UI Component Library   Element Plus 2.2, Vant 4
-  Visualization          ECharts 4.9, ECharts GL, World Map
-  HTTP                   Axios
-  Rich Text              @vueup/vue-quill
-  Others                 qiniu-js, qrcode.vue
-  Build                  Vue CLI 5, Babel, Sass
+
+| Category             | Technology                              |
+| -------------------- | --------------------------------------- |
+| Framework            | Vue 3.2 + Vue Router 4 + Vuex 4         |
+| UI Component Library | Element Plus 2.2, Vant 4                |
+| Visualization        | ECharts 4.9, ECharts GL, World Map      |
+| HTTP                 | Axios                                   |
+| Rich Text            | @vueup/vue-quill                        |
+| Others               | qiniu-js, qrcode.vue                    |
+| Build                | Vue CLI 5, Babel, Sass                  |
 
 ### Back-end (DRGF-Java)
-  -----------------------------------------------------------------------
-  Category                            Technology
-  ----------------------------------- -----------------------------------
-  Framework                           Spring 4.2.5, Spring MVC, Spring Security
 
-  ORM                                 MyBatis 3.3.1 + MyBatis-Spring
+| Category                 | Technology                                                                              |
+| ------------------------ | --------------------------------------------------------------------------------------- |
+| Framework                | Spring 4.2.5, Spring MVC, Spring Security                                               |
+| ORM                      | MyBatis 3.3.1 + MyBatis-Spring                                                          |
+| Data Storage             | MySQL, Redis (Jedis), MongoDB (Spring Data)                                             |
+| Authentication           | Spring Security, JWT, Kaptcha                                                           |
+| Search/Template          | Thymeleaf 3                                                                             |
+| Task Scheduling          | Quartz                                                                                  |
+| Tools                    | Lombok, Hutool, Fastjson, Jackson, Apache Commons, Apache POI, dom4j                    |
+| Database Connection Pool | Druid                                                                                   |
 
-  Data Storage                        MySQL, Redis (Jedis), MongoDB (Spring Data)
-
-  Authentication                      Spring Security, JWT, Kaptcha
-
-  Search/Template                     Thymeleaf 3
-
-  Task Scheduling                     Quartz
-
-  Tools                               Lombok, Hutool, Fastjson, Jackson, Apache Commons, Apache POI, dom4j
-
-  Database Connection Pool            Druid
-  -----------------------------------------------------------------------
 
 ## Installation and Running
 
@@ -88,13 +80,12 @@ DRGF provides an integrated platform for growth factor research, covering data b
 -   **User and Workspace**: Authentication, password modification, customer management, and workspace functions.
 
 ### Data Statistics
-
-  Data Category       Source                 Quantity
-  ------------------- ---------------------- ------------
-  Literatures         PubMed                   1,600,000+
-  Patents             The Lens                 1,700,000+
-  Clinical Trials     ClinicalTrials.gov       11,000+
-  Drugs & Targets     Internal Database        1,700+
+| Data Category   | Source             | Quantity    |
+| --------------- | ------------------ | ----------- |
+| Literatures     | PubMed             | 1,600,000+  |
+| Patents         | The Lens           | 1,700,000+  |
+| Clinical Trials | ClinicalTrials.gov | 11,000+     |
+| Drugs & Targets | Internal Database  | 1,700+      |
 
 ### Data Overview
 
